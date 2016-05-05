@@ -16,6 +16,13 @@ RUN apt-get update && \
       php-gd \
       php-xdebug \
       php-xml \
+      php-zip \
+      php-json \
+      php-imap \
+      php-pgsql \
+      php-mongodb \
+      php-memcache \
+      php-redis \
       git \
     && \
     php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php && \
