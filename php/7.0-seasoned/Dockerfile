@@ -8,5 +8,5 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install -y yarn && \
     yarn global add bower gulp && \
-    composer global require hirak/prestissimo
-
+    composer global require hirak/prestissimo && \
+    mkdir -p /root/.ssh
