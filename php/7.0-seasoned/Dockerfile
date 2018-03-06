@@ -1,6 +1,6 @@
 FROM ciricihq/php:7.0
 
-MAINTAINER Cirici New Media "hello@cirici.com"
+LABEL maintainer="Cirici New Media <hello@cirici.com>"
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install -y nodejs && \
@@ -10,3 +10,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     yarn global add bower gulp && \
     composer global require hirak/prestissimo && \
     mkdir -p /root/.ssh
+
+RUN useradd me
+
+USER me
