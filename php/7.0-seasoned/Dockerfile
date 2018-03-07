@@ -10,7 +10,3 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     yarn global add bower gulp && \
     composer global require hirak/prestissimo && \
     mkdir -p /root/.ssh
-
-RUN useradd me && mkdir -p /home/me/.ssh && chown -R me:me /home/me
-
-USER me
