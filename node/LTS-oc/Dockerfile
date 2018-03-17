@@ -1,5 +1,5 @@
-FROM node:boron
+FROM node:carbon
 
-MAINTAINER Cirici New Media <hello@cirici.com>
+LABEL maintainer="Cirici New Media <hello@cirici.com>"
 
 RUN npm install -g oc
