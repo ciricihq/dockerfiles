@@ -10,7 +10,6 @@ RUN apt-get update && \
       curl \
       php7.2-cli \
       php7.2-curl \
-      php7.2-mcrypt \
       php7.2-mysql \
       php7.2-sqlite3 \
       php7.2-pdo \
