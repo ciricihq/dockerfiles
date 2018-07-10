@@ -1,4 +1,4 @@
-FROM ciricihq/php:7.0
+FROM ciricihq/php:7.0.28
 
 LABEL maintainer="Cirici New Media <hello@cirici.com>"
 
